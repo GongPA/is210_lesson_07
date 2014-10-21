@@ -37,9 +37,9 @@ DATA = {
 def iter_dict_funky_sum(dict_argu):
     """
         Declare a running total integer variable.
-        Extract the key/value pairs from DATA simultaneously in a loop. 
+        Extract the key/value pairs from DATA simultaneously in a loop.
         Do this with just one for loop and no additional forms of looping.
-        Assign and append the product of the value minus the key 
+        Assign and append the product of the value minus the key
         to the running total variable.
         Return the funky total.
     """
