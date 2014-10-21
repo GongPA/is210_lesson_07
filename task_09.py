@@ -19,26 +19,24 @@ def load_data(data):
     data_dict = {}
 
     for item in data:
-        logInCSV = task_09_utility.get_data(item['data'])
-        data_dict[counter] = logInCSV
+        #in the loop task_09_utility.get_data() function and passing
+        #it the file path associated with the data key of your loop value.
+        log_in_csv = task_09_utility.get_data(item['data'])
+        data_dict[counter] = log_in_csv
         counter += 1
-    """
-        in the loop task_09_utility.get_data() function and passing
-        it the file path associated with the data key of your loop value.
-    """
     return data_dict
 
 
 def merge_data(dict_object):
-    """ 
+    """
         accepts dict_object from function "load_data()"
-        returns a list 
+        returns a list
     """
 
     dict_merge = {}
 
     for key_in_log, router in dict_object.iteritems():
-    # This loop is sprightful just follow the instruction step by step
+        # This loop is sprightful just follow the instruction step by step
         for dicts in router:
 
             for clock, avg in dicts.iteritems():
