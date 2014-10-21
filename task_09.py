@@ -50,7 +50,7 @@ def merge_data(dict_object):
                     clock = 0
                     day_time_key = 0
                 else:
-                    day_time_key = int(clock[8:10] + clock[11:13])
+                    day_time_key = int(clock[8:13])
 
                 if day_time_key in dict_merge:
                     dict_merge[day_time_key][key_in_log] = avg
