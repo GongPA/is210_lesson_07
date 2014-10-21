@@ -19,8 +19,8 @@ def load_data(data):
     data_dict = {}
 
     for item in data:
-        #in the loop task_09_utility.get_data() function and passing
-        #it the file path associated with the data key of your loop value.
+        # in the loop task_09_utility.get_data() function and passing
+        # it the file path associated with the data key of your loop value.
         log_in_csv = task_09_utility.get_data(item['data'])
         data_dict[counter] = log_in_csv
         counter += 1
@@ -48,7 +48,7 @@ def merge_data(dict_object):
                     clock = 0
                     day_time_key = 0
                 else:
-                    day_time_key = int(clock[8:13])
+                    day_time_key = clock[8:13]
 
                 if day_time_key in dict_merge:
                     dict_merge[day_time_key][key_in_log] = avg
