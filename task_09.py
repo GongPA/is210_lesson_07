@@ -22,10 +22,10 @@ def load_data(data):
         logInCSV = task_09_utility.get_data(item['data'])
         data_dict[counter] = logInCSV
         counter += 1
-"""
-    in the loop task_09_utility.get_data() function and passing
-    it the file path associated with the data key of your loop value.
-"""
+    """
+        in the loop task_09_utility.get_data() function and passing
+        it the file path associated with the data key of your loop value.
+    """
     return data_dict
 
 
