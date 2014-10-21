@@ -18,7 +18,7 @@ def get_cost_per_item(shoplist):
         the units found in FRUIT.
         Return a new dictionary with the total cost per-item reflected.
     """
-    fruit_cost = {key:value * FRUIT[key]
+    fruit_cost = {key: value * FRUIT[key]
                   for key, value in shoplist.items()
                   if key in FRUIT}
                   # trying to use same as in the video and try "In" also
