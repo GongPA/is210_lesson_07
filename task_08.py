@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-""" Get that fruit """
+""" Task 08 Get that fruit """
 
 from data import FRUIT
 
