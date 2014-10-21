@@ -20,7 +20,8 @@ def get_cost_per_item(shoplist):
     """
     fruit_cost = {key:value * FRUIT[key]
                   for key, value in shoplist.items()
-                  if FRUIT.has_key(key)}
+                  if key in FRUIT}
+                  # trying to use same as in the video and try "In" also
     return fruit_cost
 
 
